@@ -1,6 +1,9 @@
 import os
 import rasterio as rio
 import numpy as np
+import json
+import webbrowser
+import requests
 
 def getIndexInsideCircle(x, y, radio, xmax, ymax):
     points = np.array(
@@ -51,4 +54,15 @@ def getNDVI(lat, lon, raster, radio):
         "values": values[rasterIndex[:,0], rasterIndex[:,1]]
     }
     
+    return(out)
+
+
+def use_requests(text_search):
+    
+    response = requests.get(text_search)
+    json_response = json.loads(response.text)
+    out = (
+        float(json_response[0]["lon"]),
+        float(json_response[0]["lat"])
+    )
     return(out)
