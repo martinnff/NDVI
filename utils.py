@@ -57,7 +57,7 @@ def getNDVI(lat, lon, raster, radio):
     return(out)
 
 
-def use_requests(text_search):
+def send_request(text_search):
     
     response = requests.get(text_search)
     json_response = json.loads(response.text)
