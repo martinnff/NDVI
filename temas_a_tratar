@@ -1,0 +1,12 @@
+Descarga de imagenes raster
+	- Google earth engine
+	- Como tratar la nubosidad
+	- Como tratar los cambios estacionales
+
+Radio de los entornos a analizar
+100, 250, 500, 1000
+
+Variables a extraer de los entornos:
+	- Estadísticos descriptivos: Media, Cuantiles, Desviación, Rango...
+
+

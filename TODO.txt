@@ -1,0 +1,76 @@
+Extraer coordenadas:
+	Galicia:
+		Ourense - Si
+		Pontevedra - Si
+	Cataluña:
+		Barcelona - Si
+		Gerona - Si
+	Aragon:
+		Zaragoza - Si
+		Teruel - Si
+	Pais Vasco:
+		Vizcaia - Si
+	Baleares:
+		Mallorca
+		Menorca
+	Navarra:	
+		Pamplona
+	Castilla y leon:
+		Salamanca
+		Zamora - Si
+		Segovia - Si
+		Leon - Si
+		Valladolid - Si	
+	Andalucia:
+		Sevilla - Si
+
+Obtener imagenes:
+        Galicia:
+                Ourense - Si
+                Pontevedra - Si 
+        Cataluña:
+                Barcelona - Si
+                Gerona - Si
+        Aragon:
+                Zaragoza - Si
+                Teruel - Si
+        Pais Vasco:
+                Vizcaia - Si
+        Baleares:
+                Mallorca 
+                Menorca
+        Navarra:        
+                Pamplona 
+        Castilla y leon:
+                Salamanca
+                Zamora
+                Segovia
+                Leon
+                Valladolid      
+        Andalucia:
+                Sevilla - Si
+Extraer features:
+        Galicia:
+                Ourense
+                Pontevedra
+        Cataluña:
+                Barcelona
+                Gerona
+        Aragon:
+                Zaragoza
+                Teruel
+        Pais Vasco:
+                Vizcaia
+        Baleares:
+                Mallorca 
+                Menorca
+        Navarra:        
+                Pamplona 
+        Castilla y leon:
+                Salamanca
+                Zamora
+                Segovia
+                Leon
+                Valladolid      
+        Andalucia:
+                Sevilla

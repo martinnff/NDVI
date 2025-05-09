@@ -6,6 +6,23 @@ import webbrowser
 import requests
 
 def getIndexInsideCircle(x, y, radio, xmax, ymax):
+    # Crear las coordenadas de la cuadrícula en los límites especificados
+    x_coords = np.arange(max((x - radio), 0), min((x + radio + 1), xmax + 1))
+    y_coords = np.arange(max((y - radio), 0), min((y + radio + 1), ymax + 1))
+    xx, yy = np.meshgrid(x_coords, y_coords)
+    
+    # Aplanar las matrices para obtener una lista de puntos
+    points = np.vstack((xx.ravel(), yy.ravel())).T
+    
+    # Calcular las distancias desde el punto (x, y)
+    dists = np.sqrt((points[:, 0] - x) ** 2 + (points[:, 1] - y) ** 2)
+    
+    # Filtrar los puntos que están dentro del radio
+    index = np.where(dists < radio)
+    
+    return points[index]
+
+def getIndexInsideSquare(x, y, radio, xmax, ymax):
     points = np.array(
         np.meshgrid(
             range(max((x - radio), 0), min((x + radio), xmax)),

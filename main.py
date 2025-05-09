@@ -20,7 +20,7 @@ def main(raster_path,input_file,output_file,ip,port):
     for i in range(len(direcciones)):
         api_url = 'http://{}:{}/search?q={}'.format(ip,port,direcciones.iloc[i,0])
         coords = utils.send_request(api_url)
-        pixels_ndvi.append(utils.getNDVI(coords[0],coords[1],raster,3)['values'])
+        pixels_ndvi.append(utils.getNDVI(coords[0],coords[1],raster,5)['values'])
 
     # Get descriptive statistics of each set of pixel values
     nrows = len(direcciones)
@@ -38,10 +38,9 @@ def main(raster_path,input_file,output_file,ip,port):
     # Save the output
     nvdi_features.to_csv(output_file, sep=',')
 
-
 if __name__ == "__main__":
 
-    raster_path = sys.argv[1]#"./rasterImages/NDVI.tif"
+    raster_path = sys.argv[1]# "rasterImages/VIGO.tif"
     input_file = sys.argv[2]# 'input/direcciones_galicia.txt'
     output_file = sys.argv[3]# 'output/NVDI.csv'
     if (len(sys.argv) > 4): ip = sys.argv[4]
@@ -50,3 +49,6 @@ if __name__ == "__main__":
     else: port = '8080'
 
     main(raster_path,input_file,output_file,ip,port)
+
+# Run with
+#./main.py "rasterImages/NDVI.tif" "input/direcciones_galicia.txt" "output/NVDI.csv"

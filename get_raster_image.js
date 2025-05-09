@@ -2,7 +2,7 @@
 
     TODO
 
-    Modify the script in a way that generates bounding boxex containing 
+    Modify the script in a way that generates bounding boxes containing 
     all the query locations without exceeding the max download size of 
     the engine.
 
@@ -13,7 +13,7 @@
 
         2. Define a max image size and cluster observations that fit inside that size,
             then download all the boxes defined in that way.
-    
+
     Create a python script to build the instructions to export all the images using this template
 
 */
