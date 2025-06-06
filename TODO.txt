@@ -29,26 +29,26 @@ Obtener imagenes:
                 Ourense - Si
                 Pontevedra - Si 
         Cataluña:
-                Barcelona - Si
-                Gerona - Si
+                Barcelona 
+                Gerona 
         Aragon:
-                Zaragoza - Si
-                Teruel - Si
+                Zaragoza
+                Teruel 
         Pais Vasco:
-                Vizcaia - Si
+                Vizcaia 
         Baleares:
-                Mallorca 
-                Menorca
+                Mallorca - sI
+                Menorca -sI
         Navarra:        
-                Pamplona 
+                Tudela - Si 
         Castilla y leon:
-                Salamanca
-                Zamora
-                Segovia
-                Leon
-                Valladolid      
+                Salamanca - Si
+                Zamora -Si
+                Segovia - Si
+                Leon -Si
+                Valladolid - Si  
         Andalucia:
-                Sevilla - Si
+                Sevilla 
 Extraer features:
         Galicia:
                 Ourense
